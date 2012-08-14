@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org" lang="en">
+	<head>
+		<title>Socializer Application - Wicket</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/screen.css" type="text/css" />
+		<script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<a target="_blank" href="https://github.com/david-hosier/agorava-socializer-wicket"
+			class="hidden-phone"> <img
+			style="position: fixed; top: 0; left: 0; border: 0; z-index: 5000"
+			src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"
+			alt="Fork me on GitHub" />
+		</a>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<div class="title">
+						<h1>Socializer</h1>
+						<h6>When Java goes Social</h6>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="span8">
+					<div class="well">
+						<h6>Sorry, but...</h6>
+						<span>... you need to be connected at least to one Social Network in order to display a timeline.</span>
+					</div>
+				</div>
+
+				<div class="span4">
+					<div class="well">
+						<h6>Profile</h6>
+						<div wicket:id="notConnected">
+							<span>You are not connected yet to a Social Network service. Please choose one in list below.</span>
+						</div>
+						
+						<div wicket:id="profile"></div>
+					</div>
+
+
+					<div class="well">
+						<h6>Available services</h6>
+						<div wicket:id="services"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<wicket:panel xmlns:wicket>
+	<ul class="unstyled social-services clearfix">
+		<li wicket:id="services">
+			<a href="#" wicket:id="serviceLink"><img height="48" width="48" class="tooltip-bottom" wicket:id="serviceImage" /></a>
+		</li>
+	</ul>
+
+
+<!-- 	<div wicket:id="authModal"></div> -->
+</wicket:panel>
+
+<!--
+<h:form>
+	<ul class="unstyled social-services clearfix">
+		<ui:repeat var="service"
+			value="#{socialClient.manager.listOfServices}">
+			<li><h:outputLink value="#"
+					onclick="window.open('startoauth.jsf?service=#{service}','oauth','toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=0,resizable=0,width=400,height=400,modal=yes')">
+					<h:graphicImage id="serviceIcon" library="gfx"
+						name="#{service}.png" height="48" width="48"
+						styleClass="tooltip-bottom" title="#{service}" />
+				</h:outputLink></li>
+		</ui:repeat>
+	</ul>
+</h:form>
+-->
