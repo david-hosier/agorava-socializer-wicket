@@ -1,0 +1,39 @@
+<wicket:panel xmlns:wicket>
+
+<div class="status tweet">
+
+	<table>
+	
+		<thead></thead>
+		<tfoot></tfoot>
+		<tbody>
+		
+			<tr>
+			
+				<td class="avatar">
+					<img wicket:id="avatar" src="" class="rounded-5 tooltip-top" width="48" height="48" />
+				</td>
+				
+				<td class="verticalTop">
+					<p>
+						<span wicket:id="profileLink"></span>
+						<span wicket:id="created" class="statusInfo">when</span>
+						<span class="statusInfo">, via <wicket:container wicket:id="via"></wicket:container></span>
+					</p>
+					<p wicket:id="text">
+					</p>
+				</td>
+			
+			</tr>
+		
+		</tbody>
+	
+	</table>
+
+</div>
+
+<wicket:fragment wicket:id="profileLinkFragment">
+	<a wicket:id="profileLink" href="#" target="_blank" class="author"><span wicket:id="user" class="label">username</span></a>
+</wicket:fragment>
+
+</wicket:panel>

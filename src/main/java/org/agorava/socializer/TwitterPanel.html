@@ -1,0 +1,31 @@
+<html xmlns:wicket>
+
+<wicket:head>
+<style type="text/css">
+</style>
+</wicket:head>
+
+<wicket:panel>
+
+	<div class="well">
+		<h6>What's new ?</h6>
+
+		<form wicket:id="form">
+			<p>
+ 				<textarea wicket:id="status" id="status" maxlength="140" class="tweet-area" ></textarea>
+ 			</p>
+
+			<p style="text-align: right;">
+				<span wicket:id="count" style="margin-right:10px;">140</span>
+				<input type="submit" value="Tweet" class="btn" />
+			</p>
+ 		</form>
+	</div>
+	
+	<div class="well">
+		<span wicket:id="tabs" id="tabs"></span>
+	</div>
+
+</wicket:panel>
+
+</html>

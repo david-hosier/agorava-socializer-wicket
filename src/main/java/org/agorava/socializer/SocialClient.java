@@ -40,7 +40,7 @@ import org.jboss.solder.logging.Logger;
 @SessionScoped
 public class SocialClient implements Serializable {
 
-	private String Status;
+	private String status;
 
 	private String selectedService;
 
@@ -51,11 +51,11 @@ public class SocialClient implements Serializable {
 	private Logger log;
 
 	public String getStatus() {
-		return Status;
+		return status;
 	}
 
 	public void setStatus(String status) {
-		Status = status;
+		this.status = status;
 	}
 
 	public String getCurrentTheme() {

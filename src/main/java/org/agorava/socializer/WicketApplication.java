@@ -6,7 +6,6 @@ import net.ftlines.wicket.cdi.CdiConfiguration;
 
 import org.apache.wicket.protocol.http.WebApplication;
 import org.jboss.weld.environment.servlet.Listener;
-import org.scribe.builder.ServiceBuilder;
 
 /**
  * Application object for your web application. If you want to run this

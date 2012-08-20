@@ -22,12 +22,18 @@
 		<wicket.version>1.5.5</wicket.version>
 		<jetty.version>7.5.0.v20110901</jetty.version>
 		<version.agorava>0.5.0-SNAPSHOT</version.agorava>	
+		<org.joda.time.version>1.6.1</org.joda.time.version>
 	</properties>
 	<dependencies>
 		<!--  WICKET DEPENDENCIES -->
 		<dependency>
 			<groupId>org.apache.wicket</groupId>
 			<artifactId>wicket-core</artifactId>
+			<version>${wicket.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.wicket</groupId>
+			<artifactId>wicket-datetime</artifactId>
 			<version>${wicket.version}</version>
 		</dependency>
 		<dependency>
@@ -126,6 +132,12 @@
             <scope>compile</scope>
         </dependency>
 -->
+
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>${org.joda.time.version}</version>
+		</dependency>
 	</dependencies>
 	<build>
         <filters>
